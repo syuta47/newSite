@@ -26,7 +26,7 @@ header {
 /* ------------------------------------------------------------------------------ */
 
 section {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .skt {
@@ -103,6 +103,10 @@ img.moved {
   animation-iteration-count: infinite;
 }
 
+.clear {
+  clear: both;  
+}
+
 /* ------------------------------------------------------------------------------ */
 
 @media (max-width: 620px) {
@@ -156,6 +160,7 @@ button {
 
 .skt {
   float: none;
+  transform: rotate(270deg);
 }
 
 .container {
@@ -171,4 +176,64 @@ ul {
   padding-left: 0;
 }
 
+}
+
+/* ------------------------------------------------------------------------------ */
+
+.test {
+  border: 5px solid #759354;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.test-btn {
+  margin: 20px 0 0 80px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px;
+}
+
+input[type="range"],
+input[type="number"],
+input[type="date"],
+input[type="color"] {
+  margin: 20px 20px 20px 20px;
+}
+
+.pad-left {
+  margin-left: 40px;
+}
+
+label {
+  text-shadow: 5px -5px 5px;
+
+}
+
+textarea {
+  margin-top: 30px;
+  position: relative;
+  top: 20px;
+}
+
+input[type="text"] {
+  margin-left: 10px;
+}
+
+
+
+.unactive {
+  position: relative;
+}
+
+@Keyframes spin2 {
+  0% {transform: none;}
+  100% {transform: rotate(7200deg);}
+}
+
+.active2 {
+  animation-name: spin2;
+  animation-duration: 2s;
+}
+
+.count {
+  margin-left: 40px;
 }
