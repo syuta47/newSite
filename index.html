@@ -18,12 +18,13 @@
         <img src="img/千葉嵩太のiPhone 2314.JPG" alt="スカイツリー">
       </div>
       <div class="description">
-        <h1>スカイツリー</h1>
+        <h1 class="unactive">スカイツリー</h1>
         <ul>
           <li id="sh" class="skt-height">高さ：634m</li>
           <li id="sp" class="skt-p">場所：東京都墨田区押上１丁目</li>
           <li id="sm" class="skt-m2">建築面積：31,832.60 m² </li>
         </ul>
+        <p class="count">Count 3</p>
       </div>
       <div class="btn">
         <button id="btn1">高さ</button>
@@ -32,6 +33,30 @@
         <button id="btn4">回転</button>
       </div>
     </div>
+    <div class="clear"></div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="test">
+        <form action="#" method="post">
+          <label class="pad-left">名前<input type="text" name="username"></label>
+          <label class="pad-left">年齢<input type="text" name="age"></label>
+          <label class="pad-left">出身<input type="text" name="from"></label>
+          <label class="pad-left">年齢<input type="text" name="age"></label>
+          <br>
+          <button class="test-btn">おもいっきり送信</button>
+          <button disabled class="test-btn">幻の送信</button>
+        </form>
+        <form action="#">
+          <input type="range">
+          <input type="number">
+          <input type="date">
+          <input type="color">
+          <textarea name="impressions" cols="40" rows="4" placeholder="ここに一昨日の感想を書け。"></textarea>
+        </form>
+      </div>
+    </div>
+
   </section>
   <script src="js/main.js"></script>
 </body>
