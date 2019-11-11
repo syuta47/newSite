@@ -169,6 +169,11 @@ input[type="text"] {
   margin-left: 40px;
 }
 
+.p {
+  width: 120px;
+
+}
+
 @media (max-width: 620px) {
   
   header {
@@ -265,7 +270,8 @@ textarea {
   position: relative;
   right: 15px;
   top: 20px;
-
 }
+
+
 
 }
