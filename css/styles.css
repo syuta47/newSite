@@ -16,6 +16,13 @@ body {
 header {
   height: 100px;
   background: rgba(120, 159, 227,.5);
+  border: none;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+header:hover {
+  background: hsl(300,60%,60%);
 }
 
 .title {
@@ -31,9 +38,16 @@ section {
 
 .skt {
   transform: rotate(270deg);
+  /* -webkit-transform-: rotate(270deg); */
   /* transition-duration: .4s; */
   display: inline-block;
   float: left;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.skt:hover {
+  transform: scale(1.5) rotate(270deg) translate(0,100px);
 }
 
 img {
@@ -76,20 +90,24 @@ button {
 }
 
 .skt-height {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
 }
 
 .skt-p {
-  display: none;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
 }
 
 .skt-m2 {
-  display: none;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
 }
 
-.active {
-  display: inline-block;
-}
 
 
 @Keyframes spin {
@@ -101,6 +119,7 @@ img.moved {
   animation-name: spin;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .clear {
@@ -155,8 +174,98 @@ input[type="text"] {
   position: relative;
 }
 
+.test-yellow {
+  border: 5px solid yellow;
+}
+
+.pink-box {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.blue-box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.black-box {
+  width: 100px;
+  height: 100px;
+  background: black;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.pink-box:hover {
+  width: 100%;
+  height: 100px;
+  background: red;
+  /* transform: skew(300deg,400deg); */
+  /* transform: rotate(720deg); */
+}
+.blue-box:hover {
+  width: 100%;
+  height: 300px;
+  background: red;
+  transform: translate(200px,-200px);
+  border-radius: 50%;
+}
+.black-box:hover {
+  width: 100%;
+  height: 600px;
+  background: red;
+  opacity: .2;
+  transform: rotate(360deg);
+}
+
+#message {
+  position: fixed;
+  top: 300px;
+  left: 0;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.last {
+  display: none;
+  background: #279191;
+  width: 400px;
+  height: 400px;
+  border-radius: 4px;
+  position: fixed;
+  top: 20px;
+  left: 500px;
+  text-align: center;
+  padding-top: 100px;
+  border-radius: 20px;
+}
+
+.last h1 {
+  font-size: 40px;
+}
+
+.last p {
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
 @Keyframes spin2 {
   0% {transform: none;}
+  30% {color: blue;}
+  50% {font-weight: normal;}
+  85% {color: green;}
+  90% {font-weight: bold;}
+  95% {color: #333;}
   100% {transform: rotate(7200deg);}
 }
 
@@ -171,9 +280,96 @@ input[type="text"] {
 
 .p {
   width: 120px;
-
+  
 }
 
+.test-blue {
+  border: 5px solid #dc57fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+/* 
+.test-blue label {
+  position: relative;
+  bottom: 40px;
+} */
+
+select {
+  margin-left: 3;
+}
+
+.n {
+  margin-left: 40px;
+}
+
+.test-skyblue {
+  border: 5px solid skyblue;
+}
+
+img[src="img/541.png"] {
+  opacity: 0;
+}
+
+@Keyframes hokkaidou {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.hokkaidou {
+  animation-name: hokkaidou;
+  animation-duration: 2s;
+}
+
+#h-btn {
+  vertical-align: top;
+  font-size: 1.5em;
+  /* position: relative; */
+  /* bottom: 200px; */
+  /* left: 200px; */
+  display: inline-block;
+  width: 400px;
+  height: 500px;
+}
+
+.test-pink {
+  border: 2px solid pink;
+  height: 500px;
+  background-image: radial-gradient(blue,green);
+  text-align: center;
+  padding-top: 100px;
+}
+.test-pink h1 {
+  font-size: 40px;
+  color: pink;
+}
+.test-pink p {
+  font-size: 40px;
+  color: pink;
+}
+
+button {
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+}
+
+button:hover {
+  box-shadow: 3px 3px 3px 3px;
+  border-radius: 5px;
+}
+
+
+.active {
+  display: block;
+  opacity: 1;
+}
+
+/* ------------------------------------------------------------------------------ */
 @media (max-width: 620px) {
   
   header {
@@ -272,6 +468,8 @@ textarea {
   top: 20px;
 }
 
-
+.last {
+  left: 30px;
+}
 
 }
