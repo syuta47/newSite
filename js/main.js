@@ -18,6 +18,9 @@ const hokkaidouImg = document.querySelector('img[src="img/541.png"]');
 const lastBtn = document.getElementById('message');
 const last = document.getElementById('last');
 const LB = document.getElementById('last-btn');
+const Myicon = document.querySelector('.my_icon');
+const show = document.getElementById('show');
+const main = document.getElementById('main');
 
 
 btn1.addEventListener('click', () => {
@@ -65,6 +68,18 @@ lastBtn.addEventListener('click', () => {
 });
 LB.addEventListener('click', () => {
   last.classList.remove('active');
+});
+
+Myicon.addEventListener('click', () => { 
+  Myicon.classList.toggle('fa-spin');
+});
+
+show.addEventListener('click', () => {
+  if (main.className === 'menu-open') {
+    main.className = '';
+  } else {
+    main.className = 'menu-open';
+  }
 });
 
 }
