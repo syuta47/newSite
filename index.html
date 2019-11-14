@@ -5,115 +5,136 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>MynewSite</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="title">MyNewSite</div>
-    </div>
-  </header>
-  <section class="sc1">
-    <div class="container">
-      <div class="skt">
-        <img src="img/千葉嵩太のiPhone 2314.JPG" alt="スカイツリー">
+  <div id="main">
+      <i class="fa fa-bars" id="show"></i>
+    <header>
+      <div class="container">
+        <div class="title">MyNewSite</div>
       </div>
-      <div class="description">
-        <h1 class="unactive">スカイツリー</h1>
-        <ul>
-          <li id="sh" class="skt-height">高さ：634m</li>
-          <li id="sp" class="skt-p">場所：東京都墨田区押上１丁目</li>
-          <li id="sm" class="skt-m2">建築面積：31,832.60 m² </li>
-        </ul>
-        <p class="count">Count 0</p>
+    </header>
+    <section class="sc1">
+      <div class="container">
+        <div class="skt">
+          <img src="img/千葉嵩太のiPhone 2314.JPG" alt="スカイツリー">
+        </div>
+        <div class="description">
+          <h1 class="unactive">スカイツリー</h1>
+          <ul>
+            <li id="sh" class="skt-height">高さ：634m</li>
+            <li id="sp" class="skt-p">場所：東京都墨田区押上１丁目</li>
+            <li id="sm" class="skt-m2">建築面積：31,832.60 m² </li>
+          </ul>
+          <p class="count">Count 0</p>
+        </div>
+        <div class="btn">
+          <button id="btn1">高さ</button>
+          <button id="btn2">場所</button>
+          <button id="btn3">面積</button>
+          <button id="btn4">回転</button>
+          <button id="btn5">回転2</button>
+        </div>
       </div>
-      <div class="btn">
-        <button id="btn1">高さ</button>
-        <button id="btn2">場所</button>
-        <button id="btn3">面積</button>
-        <button id="btn4">回転</button>
-        <button id="btn5">回転2</button>
+      <div class="clear"></div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="test">
+          <form action="#" method="post">
+            <label class="pad-left">名前<input type="text" name="username"></label>
+            <label class="pad-left">年齢<input type="text" name="age"></label>
+            <label class="pad-left">出身<input type="text" name="from"></label>
+            <label class="pad-left ">タイプ<input class="p" type="text" name="type"></label>
+            <br>
+            <button class="test-btn">おもいっきり送信</button>
+            <button disabled class="test-btn">幻の送信</button>
+          </form>
+          <form action="#">
+            <input type="range">
+            <input type="number">
+            <input type="date">
+            <input type="color">
+            <textarea name="impressions" cols="40" rows="4" placeholder="ここに一昨日の感想を書け。"></textarea>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="clear"></div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="test">
-        <form action="#" method="post">
-          <label class="pad-left">名前<input type="text" name="username"></label>
-          <label class="pad-left">年齢<input type="text" name="age"></label>
-          <label class="pad-left">出身<input type="text" name="from"></label>
-          <label class="pad-left ">タイプ<input class="p" type="text" name="type"></label>
-          <br>
-          <button class="test-btn">おもいっきり送信</button>
-          <button disabled class="test-btn">幻の送信</button>
-        </form>
-        <form action="#">
-          <input type="range">
-          <input type="number">
-          <input type="date">
-          <input type="color">
-          <textarea name="impressions" cols="40" rows="4" placeholder="ここに一昨日の感想を書け。"></textarea>
-        </form>
+    </section>
+    <section>
+      <div class="container">
+        <div class="test-blue">
+          <form action="#">
+            <fieldset>
+              <legend>お使いの携帯は？</legend>
+              <label><input type="radio" name="phone">iphone</label>
+              <label><input type="radio" name="phone">Android</label>
+              <label><input type="radio" name="phone">その他</label>
+              <label class="n">好きな食べ物</label>
+              <select size="1">
+                <option>カレー</option>
+                <option>ラーメン</option>
+                <option>焼肉</option>
+                <option selected>寿司</option>
+                <option>宝永</option>
+              </select>
+            </fieldset>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="test-blue">
-        <form action="#">
-          <fieldset>
-            <legend>お使いの携帯は？</legend>
-            <label><input type="radio" name="phone">iphone</label>
-            <label><input type="radio" name="phone">Android</label>
-            <label><input type="radio" name="phone">その他</label>
-            <label class="n">好きな食べ物</label>
-            <select size="1">
-              <option>カレー</option>
-              <option>ラーメン</option>
-              <option>焼肉</option>
-              <option selected>寿司</option>
-              <option>宝永</option>
-            </select>
-          </fieldset>
-        </form>
+    </section>
+    <section>
+      <div class="container">
+        <div class="test-skyblue">
+          <h1>北海道</h1>
+          <img src="img/541.png" alt="北海道の画像です" width="400" height="400">
+          <button id="h-btn">北海道出現</button>
+          
+        </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="test-skyblue">
-        <h1>北海道</h1>
-        <img src="img/541.png" alt="北海道の画像です" width="400" height="400">
-        <button id="h-btn">北海道出現</button>
-        
+    </section>
+    <section>
+      <div class="container">
+        <div class="test-pink">
+          <h1>抹茶</h1>
+          <p>アイスやシェイクなど幅広く、使われる。</p>
+          <p>とても、美味しいです。</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="test-pink">
-        <h1>抹茶</h1>
-        <p>アイスやシェイクなど幅広く、使われる。</p>
-        <p>とても、美味しいです。</p>
+    </section>
+    <section>
+      <div class="container">
+        <div class="test-yellow">
+          <div class="pink-box"></div>
+          <div class="blue-box"></div>
+          <div class="black-box"></div>
+        </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="test-yellow">
-        <div class="pink-box"></div>
-        <div class="blue-box"></div>
-        <div class="black-box"></div>
+    </section>
+    <button id="message">メッセージ<br>表示</button>
+    <section class="last" id="last">
+      <h1>Thank you</h1>
+      <p>またきてね！</p>
+      <button id="last-btn">閉じる</button>
+    </section>
+    <section>
+      <div class="container">
+        <div class="font-awesome">
+            <p><i class="fas fa-align-justify fa-5x my_icon"></i></p>
+        </div>
       </div>
-    </div>
-  </section>
-  <button id="message">メッセージ<br>表示</button>
-  <section class="last" id="last">
-    <h1>Thank you</h1>
-    <p>またきてね！</p>
-    <button id="last-btn">閉じる</button>
-  </section>
+    </section>
+    
+  </div>
+  <div id="menu">
+    <ul>
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+      <li>menu5</li>
+    </ul>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>
