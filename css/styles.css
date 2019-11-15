@@ -38,7 +38,7 @@ section {
 }
 
 .skt {
-  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
   /* -webkit-transform-: rotate(270deg); */
   /* transition-duration: .4s; */
   display: inline-block;
@@ -237,7 +237,7 @@ input[type="text"] {
 }
 
 .last {
-  display: none;
+  opacity: 0;
   background: #279191;
   width: 400px;
   height: 400px;
@@ -248,6 +248,7 @@ input[type="text"] {
   text-align: center;
   padding-top: 100px;
   border-radius: 20px;
+  display: none;
 }
 
 .last h1 {
@@ -311,7 +312,7 @@ select {
 .test-skyblue {
   border: 5px solid skyblue;
 }
-
+/* ------------------------------------------------------------------------------ */
 img[src="img/541.png"] {
   opacity: 0;
 }
@@ -321,7 +322,7 @@ img[src="img/541.png"] {
   100% {opacity: 1;}
 }
 
-.hokkaidou {
+.hImg.hokkaidou {
   animation-name: hokkaidou;
   animation-duration: 2s;
 }
@@ -336,7 +337,7 @@ img[src="img/541.png"] {
   width: 400px;
   height: 500px;
 }
-
+/* ------------------------------------------------------------------------------ */
 .test-pink {
   border: 2px solid pink;
   height: 500px;
@@ -364,10 +365,19 @@ button:hover {
   border-radius: 5px;
 }
 
-
+#last {
+  transition-duration: 1s;
+  /* display: none; */
+}
 .active {
-  display: block;
+  /* display: block; */
   opacity: 1;
+}
+.opacity {
+  opacity: 1;
+}
+.active3 {
+  display: block;
 }
 /* ------------------------------------------------------------------------------ */
 .font-awesome {
@@ -392,25 +402,26 @@ button:hover {
   box-sizing: border-box;
   width: 180px;
   min-height: 100%;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 #menu ul {
   list-style-type: disc;
 }
 #main {
-  z-index: 10;
+  z-index: 1;
   background: #eee;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
-  right: 0;
-  transition-property: all;
-  transition-duration: 0.4s;
+  left: 0;
+  transition-duration: 1s;
 }
 #main.menu-open {
   left: -180px;
+  /* animation-name: show;
+  animation-duration: 1s; */
 }
 #show {
   float: right;
@@ -418,6 +429,11 @@ button:hover {
   margin-top: 20px;
   margin-right: 20px;
   font-size: 47px;
+}
+
+@keyframes show {
+  0% {left:0;}
+  100% {left: -180px;}
 }
 
 
