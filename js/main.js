@@ -13,11 +13,14 @@ const sm = document.getElementById('sm');
 const sktImg = document.querySelector('.skt img');
 const desH1 = document.querySelector('.description h1');
 const c = document.querySelector('.count');
-const hokkaidouBtn = document.getElementById('h-btn');
+
+const showHokkaidouBtn = document.getElementById('h-btn');
 const hokkaidouImg = document.querySelector('img[src="img/541.png"]');
+
 const lastBtn = document.getElementById('message');
 const last = document.getElementById('last');
 const LB = document.getElementById('last-btn');
+
 const Myicon = document.querySelector('.my_icon');
 const show = document.getElementById('show');
 const main = document.getElementById('main');
@@ -59,16 +62,30 @@ btn5.addEventListener('click', () => {
   a = false;
 });
 
-hokkaidouBtn.addEventListener('click', () => {
+
+showHokkaidouBtn.addEventListener('click', () => {
   hokkaidouImg.classList.toggle('hokkaidou');
 });
 
-lastBtn.addEventListener('click', () => {
+function show1() {
   last.classList.add('active');
+}
+function unShow() {
+  last.classList.remove('active');
+}
+function removeActive3() {
+  last.classList.remove('active3');
+}
+
+lastBtn.addEventListener('click', () => {
+  last.classList.add('active3');
+  setTimeout(show1,10);
 });
 LB.addEventListener('click', () => {
-  last.classList.remove('active');
+  unShow();
+  setTimeout(removeActive3,1010);
 });
+
 
 Myicon.addEventListener('click', () => { 
   Myicon.classList.toggle('fa-spin');
